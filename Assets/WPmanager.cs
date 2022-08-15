@@ -35,6 +35,19 @@ public class WPmanager : MonoBehaviour          //무기 줍고 그것을 플레이어에 장
             Destroy(parent.transform.GetChild(0).gameObject);
             Instantiate(riflePrefab, pos.position, pos.transform.rotation).transform.parent = parent.transform;
         }
+        else if(other.tag == "cool_item")
+        {
+            nearObject = other.gameObject;
+            nearObject.GetComponent<cool_item>().apply();
+            Destroy(nearObject);
+        }
+        else if (other.tag == "speed_item")
+        {
+            nearObject = other.gameObject;
+            nearObject.GetComponent<speed_item>().apply();
+            Destroy(nearObject);
+        }
+
     }
     void OnTriggerExit2D(Collider2D other)
     {

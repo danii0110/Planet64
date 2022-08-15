@@ -82,6 +82,10 @@
     <Compile Include="Assets\BulletAttack.cs" />
     <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
+    <Compile Include="Assets\speed_item.cs" />
+    <Compile Include="Assets\cool_item.cs" />
+    <Compile Include="Assets\hp1_item.cs" />
+    <Compile Include="Assets\hp2_item.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

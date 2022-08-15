@@ -13,6 +13,10 @@ TagManager:
   - RifleWP
   - enemyFollow
   - grid
+  - speed_item
+  - cool_item
+  - hp1_item
+  - hp2_item
   layers:
   - Default
   - TransparentFX
